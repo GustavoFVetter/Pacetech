@@ -1,6 +1,6 @@
 
 package JavaConverterMoedasTemperaturas;
-import java.util.Scanner; //importação do leitor de dados
+import java.util.Scanner; //importaÃ§Ã£o do leitor de dados
 /**
  * @author Gustavo F. Vetter 03/11/21
  */
@@ -18,9 +18,9 @@ public class Main {
         
         char desejaContinuar = 'S';
         
-        Scanner leitor = new Scanner(System.in); //criação do leitor de dados
+        Scanner leitor = new Scanner(System.in); //criaÃ§Ã£o do leitor de dados
         
-        // Entrada da cotação do dólar + confirmação do valor
+        // Entrada da cotaÃ§Ã£o do dÃ³lar + confirmaÃ§Ã£o do valor
         System.out.println("Digite a cotacao do Dolar para conversao"
                 + " para Reais:");
         cotacaoDolar = leitor.nextFloat();
@@ -30,7 +30,7 @@ public class Main {
         
         while(desejaContinuar == 'S' || desejaContinuar == 's'){
         
-        // Menu com a opções para o usuário:
+        // Menu com a opÃ§Ãµes para o usuÃ¡rio:
         System.out.println("Escolha uma das opcoes abaixo:");
         System.out.println("1 - Converter Reais para Dolares");
         System.out.println("2 - Converter Dolares para Reais:");
@@ -48,8 +48,8 @@ public class Main {
                 System.out.println(" ");
                 System.out.println("Na cotacao de " + cotacaoDolar + " por um,"
                         + " R$ " + valorEmReais + " equivale(m) a US$ " + 
-                        (valorEmReais * cotacaoDolar));
-                break; // Obrigatório ter um break ao final de cada case, para encerar esta execução. É como ter uma flag de saída  no visualG
+                        (valorEmReais / cotacaoDolar));
+                break; // ObrigatÃ³rio ter um break ao final de cada case, para encerar esta execuÃ§Ã£o. Ã‰ como ter uma flag de saÃ­da  no visualG
             
             case 2: // COnverter Dolares para Reais
                 System.out.println(" ");
